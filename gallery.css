@@ -1,0 +1,80 @@
+section.gallery{
+    display: flex;
+    justify-content: center;
+    padding:40px 0px
+}
+
+section.gallery>.col{
+    width:450px;margin: 20px;
+    
+    
+}
+section.gallery>.col>.block{
+    margin-bottom: 40px;
+    display: flex;align-items: center;justify-content: center;
+    
+}
+section.gallery>.col>.block>.word{
+    width: 100%;
+}
+
+section.gallery>.col>.block>.word>.title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;font-weight: bold;
+    margin-bottom: 30px;
+
+    
+}
+
+section.gallery>.col>.block>.word>.story{
+    font-size: 1.5em;font-weight: bold;
+    margin-bottom: 40px;
+    
+}
+
+section.gallery>.col>.block>.word>.action>.btn{
+    font-size: 0.8em;color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    padding:10px 20px;
+    transition: background-color 0.3s;
+}
+
+section.gallery>.col>.block>.word>.action>.btn:hover{
+    background-color: rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+section.gallery>.col>.pic{
+width: 100%;height: 500px;
+text-align: center;color: #ffffff;
+}
+
+section.gallery>.col>.pic1{
+    background-image: url(G1.jpg);
+    background-size: cover;
+}
+
+section.gallery>.col>.pic2{
+    background-image: url(G2.jpg);
+    background-size: cover;
+}
+section.gallery>.col>.text{
+    box-sizing: border-box;
+    width: 100%;height: 300px;
+    text-align: center;color: black;
+    border:4px solid #000000;
+    line-height: 0.9em;
+}
+@media (max-width:800px){
+    section.gallery{
+        flex-wrap:wrap;
+    }
+    section.gallery>.col{
+        width:90%;margin:20px 0Px
+    }
+        section.gallery > .col:last-child  {
+            display:flex;flex-direction:column-reverse;
+
+        }
+}

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <mata name="viewport" content="width=device-width,initial-scale=1.0/">
+    <meta charset="utf-8"/>
+    <title>Fashion Diary</title>    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="article.css">
+</head>
+
+<body>
+    <script src="main.js"> </script>
+    <nav>
+        <div class="title">Fashion Diary</div>
+        <div class="menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+            <div onclick="closeMobileMenu();" class="close">X</div>
+        </div>
+
+        <div onclick="showMobileMenu();" class="mobile-menu-trigger">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="memo">
+            You’ve got to find </br>What You Love
+        </div>
+    </nav>
+    <section class="gallery">
+        <div class="col">
+            <div class="block pic pic1">
+                <div class="word">
+                    <div class="title">Fashion Item</div>
+                    <div class="story">The Blog</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="block text">
+                <div class="word">
+                    <div class="title">What's Fashion</div>
+                    <div class="story">News</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="block text">
+                <div class="word">
+                    <div class="title">Fashion Sence</div>
+                    <div class="story">Video</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="block pic pic2">
+                <div class="word">
+                    <div class="title">Fashion Tips</div>
+                    <div class="story">Style</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--挑戰部份-->
+    <main class="row">
+            <div class="article block">
+                <div class="col img1"></div>
+                <div class="col">
+                    <div class="title">Question:</br>What is Fashion?</div>
+                    <div class="content">that is a good question! 
+                    </br>Let me try to answer your question
+                </div>
+                    <div class="bottom"><hr>
+                        view 100 <u>write comment</u>
+                    </div>
+                </div>   
+                
+            </div>
+
+            <div class="article block">
+                <div class="col img2"></div>
+                <div class="col">
+                    <div class="title">Question:</br>What is the newest Fashion Item?</div>
+                    <div class="content">that is a good question! 
+                    </br>Let me try to answer your question
+                </div>
+                    <div class="bottom"><hr>
+                        view 100 <u>write comment</u></div>
+                </div>   
+            </div>
+            
+    </main>
+    
+</body>
+</html>
